@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import Post from "./Post";
 import { PostList as PostListData } from "../components/store/post-list-store";
-import WelcomeMeassage from "./WelcomeMessage";
+import WelcomeMessage from "./WelcomeMessage"; // Corrected import
 
 const PostList = () => {
   const { postList, addInitialPosts } = useContext(PostListData);
@@ -16,7 +16,7 @@ const PostList = () => {
   return (
     <>
       {postList.length === 0 && (
-        <WelcomeMeassage onGetPostsClick={handleGetPostsClick} />
+        <WelcomeMessage onGetPostsClick={handleGetPostsClick} /> // Corrected component name
       )}
       {postList.map((post) => (
         <Post key={post.id} post={post} />
