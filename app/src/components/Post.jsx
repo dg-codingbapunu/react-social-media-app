@@ -19,12 +19,21 @@ const Post = ({ post }) => {
         <p className="card-text">{post.body}</p>
         {post.tags.map((tag) => (
           <span key={tag} className="badge text-bg-primary hashtag">
-            {tag}
+            {`#${tag}`}
           </span>
         ))}
-        <div className="alert alert-success reactions" role="alert">
-          This post has been reacted by {post.reactions} people.
-        </div>
+        <button
+          type="button"
+          class="btn btn-primary button"
+        >{`👍${post.reactions}`}</button>
+        <button
+          type="button"
+          class="btn btn-primary button"
+        >{`👎${post.reactions}`}</button>
+        <button
+          type="button"
+          class="btn btn-primary button"
+        >{`❤️${post.reactions}`}</button>
       </div>
     </div>
   );

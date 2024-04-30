@@ -36,7 +36,9 @@
 .spinner {
   margin: 10% 0;
 }
-
+.button {
+  margin-left: 6px;
+}
 /* Responsive styles */
 @media only screen and (max-width: 1200px) {
   /* Adjustments for medium-sized devices */
