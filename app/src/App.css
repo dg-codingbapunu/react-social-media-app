@@ -104,3 +104,8 @@
     margin: 3% 0; /* Adjusted margin for smartphones */
   }
 }
+@media screen and (max-width: 600px) {
+  .button {
+    margin-left: 3px; /* Adjust the margin for smaller screens */
+  }
+}
