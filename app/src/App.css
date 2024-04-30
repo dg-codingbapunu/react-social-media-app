@@ -33,24 +33,72 @@
 .welcome-message {
   margin: 100px 0;
 }
+.spinner {
+  margin: 10% 0;
+}
 
-/* Media query for mobile devices */
+/* Responsive styles */
+@media only screen and (max-width: 1200px) {
+  /* Adjustments for medium-sized devices */
+  .post-card {
+    margin: 20px 30px; /* Adjusted margin for medium-sized screens */
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* Adjustments for small laptops and tablets */
+  .create-post {
+    width: 90%; /* Adjusted width for small laptops and tablets */
+    margin-left: 5%; /* Adjusted margin for small laptops and tablets */
+  }
+}
+
 @media only screen and (max-width: 768px) {
+  /* Adjustments for tablets and large smartphones */
   .app-container {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
   }
 
   .post-card {
-    width: calc(100% - 40px); /* Adjust width to fit container */
-    margin: 10px; /* Reduce margin for smaller screens */
+    margin: 20px 10px; /* Adjusted margin for tablets and large smartphones */
   }
 
   .create-post {
-    width: 100%; /* Take full width */
-    margin: 20px 0; /* Adjust margin */
+    width: 90%; /* Adjusted width for tablets and large smartphones */
+    margin-top: 20px; /* Adjusted margin for tablets and large smartphones */
+    margin-left: 5%; /* Adjusted margin for tablets and large smartphones */
   }
 
   .sidebar {
-    min-height: auto; /* Allow sidebar to adjust height */
+    min-height: auto; /* Adjusted min-height for tablets and large smartphones */
+  }
+
+  .welcome-message {
+    margin: 50px 0; /* Adjusted margin for tablets and large smartphones */
+  }
+
+  .spinner {
+    margin: 5% 0; /* Adjusted margin for tablets and large smartphones */
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /* Adjustments for smartphones */
+  .post-card {
+    margin: 20px 5px; /* Adjusted margin for smartphones */
+  }
+
+  .create-post {
+    width: 95%; /* Adjusted width for smartphones */
+    margin-top: 10px; /* Adjusted margin for smartphones */
+    margin-left: 2.5%; /* Adjusted margin for smartphones */
+  }
+
+  .welcome-message {
+    margin: 30px 0; /* Adjusted margin for smartphones */
+  }
+
+  .spinner {
+    margin: 3% 0; /* Adjusted margin for smartphones */
   }
 }
