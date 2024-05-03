@@ -34,9 +34,7 @@ const PostListProvider = ({ children }) => {
   const addInitialPosts = (posts) => {
     dispatchPostList({
       type: "ADD_INITIAL_POSTS",
-      payload: {
-        posts,
-      },
+      payload: posts,
     });
   };
 
