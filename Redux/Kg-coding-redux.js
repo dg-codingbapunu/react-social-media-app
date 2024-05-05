@@ -1,5 +1,10 @@
 const redux = require("redux");
-const reducer = (store, action) => {};
+const INITIAL_VALUE = {
+  counter: 0,
+};
+const reducer = (store = INITIAL_VALUE, action) => {
+  return { counter: store.counter + 1 };
+};
 
 const store = redux.createStore(reducer);
 const subscriber = () => {
