@@ -24,4 +24,4 @@ store.subscribe(subscriber);
 store.dispatch({ type: "INCREMENT" });
 store.dispatch({ type: "DECREMENT" });
 store.dispatch({ type: "INCREMENT" });
-store.dispatch({ type: "ADDITION", payload: { number: 9 } });
+store.dispatch({ type: "ADDITION", payload: { number: 8 } });
