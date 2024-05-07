@@ -6,7 +6,7 @@ import Container from "./components/Container";
 const App = () => {
   return (
     <>
-      <div className="px-4 py-5 my-5 text-center">
+      <center className="px-4 py-5 my-5 text-center">
         <Container>
           <Header></Header>
           <div className="col-lg-6 mx-auto">
@@ -27,7 +27,7 @@ const App = () => {
             </div>
           </div>
         </Container>
-      </div>
+      </center>
     </>
   );
 };
