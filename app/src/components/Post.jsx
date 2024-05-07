@@ -5,34 +5,34 @@ const Post = ({ post }) => {
   const { deletePost } = useContext(PostList);
 
   return (
-    <div className="card post-card" style={{ width: "30rem" }}>
-      <div className="card-body">
-        <h5 className="card-title">
+    <div classNameName="card post-card" style={{ width: "30rem" }}>
+      <div classNameName="card-body">
+        <h5 classNameName="card-title">
           {post.title}
           <span
-            className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+            classNameName="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
             onClick={() => deletePost(post.id)}
           >
             <AiFillDelete />
           </span>
         </h5>
-        <p className="card-text">{post.body}</p>
+        <p classNameName="card-text">{post.body}</p>
         {post.tags.map((tag) => (
-          <span key={tag} className="badge text-bg-primary hashtag">
+          <span key={tag} classNameName="badge text-bg-primary hashtag">
             {`#${tag}`}
           </span>
         ))}
         <button
           type="button"
-          class="btn btn-primary button"
+          className="btn btn-primary button"
         >{`👍${post.reactions}`}</button>
         <button
           type="button"
-          class="btn btn-primary button"
+          className="btn btn-primary button"
         >{`👎${post.reactions}`}</button>
         <button
           type="button"
-          class="btn btn-primary button"
+          className="btn btn-primary button"
         >{`❤️${post.reactions}`}</button>
       </div>
     </div>

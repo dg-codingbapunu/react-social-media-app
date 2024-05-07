@@ -1,6 +1,6 @@
 const WelcomeMessage = () => {
   return (
-    <center className="welcome-message">
+    <center classNameName="welcome-message">
       <h1>There are no posts</h1>
     </center>
   );

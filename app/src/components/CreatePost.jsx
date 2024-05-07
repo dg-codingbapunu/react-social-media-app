@@ -28,74 +28,74 @@ const CreatePost = () => {
   };
 
   return (
-    <form className="create-post" onSubmit={handleSubmit}>
-      <div className="mb-3">
-        <label htmlFor="userId" className="form-label">
+    <form classNameName="create-post" onSubmit={handleSubmit}>
+      <div classNameName="mb-3">
+        <label htmlFor="userId" classNameName="form-label">
           Enter your User Id here
         </label>
         <input
           type="text"
           ref={userIdElement}
-          className="form-control"
+          classNameName="form-control"
           id="userId"
           placeholder="Your User Id"
         />
       </div>
 
-      <div className="mb-3">
-        <label htmlFor="title" className="form-label">
+      <div classNameName="mb-3">
+        <label htmlFor="title" classNameName="form-label">
           Post Title
         </label>
         <input
           type="text"
           ref={postTitleElement}
-          className="form-control"
+          classNameName="form-control"
           id="title"
           placeholder="How are you feeling today..."
         />
       </div>
 
-      <div className="mb-3">
-        <label htmlFor="body" className="form-label">
+      <div classNameName="mb-3">
+        <label htmlFor="body" classNameName="form-label">
           Post Content
         </label>
         <textarea
           type="text"
           ref={postBodyElement}
           rows="4"
-          className="form-control"
+          classNameName="form-control"
           id="body"
           placeholder="Tell us more about it"
         />
       </div>
 
-      <div className="mb-3">
-        <label htmlFor="reactions" className="form-label">
+      <div classNameName="mb-3">
+        <label htmlFor="reactions" classNameName="form-label">
           Number of reactions
         </label>
         <input
           type="text"
           ref={reactionsElement}
-          className="form-control"
+          classNameName="form-control"
           id="reactions"
           placeholder="How many people reacted to this post"
         />
       </div>
 
-      <div className="mb-3">
-        <label htmlFor="tags" className="form-label">
+      <div classNameName="mb-3">
+        <label htmlFor="tags" classNameName="form-label">
           Enter your hashtags here
         </label>
         <input
           type="text"
-          className="form-control"
+          classNameName="form-control"
           id="tags"
           ref={tagsElement}
           placeholder="Please enter tags using space"
         />
       </div>
 
-      <button type="submit" className="btn btn-primary">
+      <button type="submit" classNameName="btn btn-primary">
         Post
       </button>
     </form>
